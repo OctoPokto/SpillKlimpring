@@ -23,6 +23,15 @@ h3 {
   padding-right: 12px;
 }
 
+.content-divider {
+  background-size: contain;
+  size: 100%;
+}
+
+.jam-current {
+  background-color: #3fff95;
+}
+
 .carousel-item img {
   object-fit: scale-down;
   object-position: center;
