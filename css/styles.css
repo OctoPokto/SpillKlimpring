@@ -1,19 +1,19 @@
 header {
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: #ffccf6;
 }
 body {
   background-color: #3fff95;
 }
 h1 {
-  color: rgb(46, 46, 46);
-  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 0, 210);
+  font-family: "Permanent Marker", sans-serif;
 }
 h2 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
 }
 .nav-link {
   white-space: nowrap;
@@ -21,7 +21,7 @@ h3 {
 
 /*Index*/
 .wave-container {
-  height: 40vh;
+  height: 2px;
   background-color: #ffccf6;
   position: relative;
 }
@@ -29,7 +29,7 @@ h3 {
 .wave-container::before {
   content: "";
   width: 100%;
-  height: 48px;
+  height: 32px;
   position: absolute;
   bottom: -0.3%;
   left: 0;
@@ -48,11 +48,6 @@ h3 {
   border-radius: 100%;
   padding-left: 12px;
   padding-right: 12px;
-}
-
-.content-divider {
-  background-size: contain;
-  size: 100%;
 }
 
 .jam-current {
