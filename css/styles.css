@@ -1,9 +1,9 @@
 header {
   font-family: "Oswald", sans-serif;
-  background-color: #ffccf6;
+  background-color: #3fff95;
 }
 body {
-  background-color: #3fff95;
+  background-color: #ffccf6;
 }
 h1 {
   color: rgb(255, 0, 210);
@@ -20,9 +20,33 @@ h3 {
 }
 
 /*Index*/
+/* HTML: <div class="3d-zig-zag-edge"></div> */
+.zig-zag-3d-edge {
+  --s: 72px; /* control the size */
+  --a: 120deg; /* control the angle  */
+  --d: 20px; /* the depth */
+
+  height: 72px;
+  width: 100%;
+  background: conic-gradient(
+      from calc(180deg - var(--a) / 2) at 50% var(--d),
+      #0004,
+      #0000 1deg calc(var(--a) - 1deg),
+      #0008 var(--a) calc(180deg + var(--a) / 2),
+      #0004 0
+    )
+    50% / var(--s) #ffccf6; /* the main color */
+  mask: conic-gradient(
+      from calc(180deg - var(--a) / 2) at top,
+      #0000,
+      #000 1deg calc(var(--a) - 1deg),
+      #0000 var(--a)
+    )
+    50% / var(--s);
+}
 .wave-container {
   height: 2px;
-  background-color: #ffccf6;
+  background-color: #3fff95;
   position: relative;
 }
 
