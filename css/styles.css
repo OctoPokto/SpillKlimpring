@@ -6,14 +6,19 @@ body {
   background-color: #ffccf6;
 }
 h1 {
-  color: rgb(255, 0, 210);
+  color: #fff600;
   font-family: "Permanent Marker", sans-serif;
+  text-shadow: -5px 5px #fe01d2;
 }
 h2 {
   font-family: "Oswald", sans-serif;
 }
 h3 {
   font-family: "Roboto Mono", sans-serif;
+}
+p {
+  font-family: "Roboto Mono";
+  font-size: large;
 }
 .nav-link {
   white-space: nowrap;
@@ -44,38 +49,19 @@ h3 {
     )
     50% / var(--s);
 }
-.wave-container {
-  height: 2px;
-  background-color: #3fff95;
-  position: relative;
-}
-
-.wave-container::before {
-  content: "";
-  width: 100%;
-  height: 32px;
-  position: absolute;
-  bottom: -0.3%;
-  left: 0;
-  background-size: auto;
-  background-repeat: repeat no-repeat;
-  background-position: 41vw bottom;
-  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  104' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 76L50 72C100 67 200 58 300 39C400 20 500 -8 600 1C700 11 800 58 900 76C1000 95 1100 86 1150 81L1200 76V104H1150C1100 104 1000 104 900 104C800 104 700 104 600 104C500 104 400 104 300 104C200 104 100 104 50 104H0V76Z' fill='%233fff95'/></svg>");
-}
-
-@media (max-width: 850px) {
-  .wave-container::before {
-    height: 24px;
-  }
-}
 .btn-floating {
   border-radius: 100%;
   padding-left: 12px;
   padding-right: 12px;
 }
 
-.jam-current {
+.bg-jam-current {
   background-color: #3fff95;
+  border-color: #ffccf6;
+  border-width: 5px;
+  box-shadow: -15px 15px #fff600;
+  padding: 2%;
+  border-radius: 5%;
 }
 
 .carousel-item img {
@@ -92,4 +78,7 @@ h3 {
 .date {
   text-align: end;
   word-wrap: break-word;
+}
+.footer {
+  background-color: #fff600;
 }
