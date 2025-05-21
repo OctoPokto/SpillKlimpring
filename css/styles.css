@@ -16,10 +16,22 @@ h2 {
 h3 {
   font-family: "Roboto Mono", sans-serif;
 }
+h4 {
+  color: #fff600;
+  font-family: "Permanent Marker", sans-serif;
+  text-shadow: -2px 2px #fe01d2;
+}
 p {
   font-family: "Roboto Mono";
   font-size: large;
 }
+a {
+  color: #fe01d2;
+}
+h1:hover {
+  text-shadow: -3px 3px #fe01d2;
+}
+
 .nav-link {
   white-space: nowrap;
 }
@@ -55,13 +67,13 @@ p {
   padding-right: 12px;
 }
 
-.bg-jam-current {
+.sk-textbox {
   background-color: #3fff95;
   border-color: #ffccf6;
   border-width: 5px;
   box-shadow: -15px 15px #fff600;
   padding: 2%;
-  border-radius: 5%;
+  border-radius: 1rem;
 }
 
 .carousel-item img {
@@ -80,5 +92,5 @@ p {
   word-wrap: break-word;
 }
 .footer {
-  background-color: #fff600;
+  background-color: #3fff95;
 }
