@@ -32,10 +32,9 @@ h1:hover {
   text-shadow: -3px 3px #fe01d2;
 }
 
-.nav-link {
-  white-space: nowrap;
+.navbar-brand-img {
+  height: 4rem;
 }
-
 .pattern-cross-dots-md::after {
   mask-image: radial-gradient(circle at center, transparent, black);
 }
@@ -50,29 +49,6 @@ h1:hover {
   );
 }
 
-.zig-zag-3d-edge {
-  --s: 72px; /* control the size */
-  --a: 120deg; /* control the angle  */
-  --d: 20px; /* the depth */
-
-  height: 72px;
-  width: 100%;
-  background: conic-gradient(
-      from calc(180deg - var(--a) / 2) at 50% var(--d),
-      #0004,
-      #0000 1deg calc(var(--a) - 1deg),
-      #0008 var(--a) calc(180deg + var(--a) / 2),
-      #0004 0
-    )
-    50% / var(--s) #ffccf6; /* the main color */
-  mask: conic-gradient(
-      from calc(180deg - var(--a) / 2) at top,
-      #0000,
-      #000 1deg calc(var(--a) - 1deg),
-      #0000 var(--a)
-    )
-    50% / var(--s);
-}
 .btn-floating {
   border-radius: 100%;
   padding-left: 12px;
@@ -104,5 +80,8 @@ h1:hover {
   word-wrap: break-word;
 }
 .footer {
+  background-color: #3fff95;
+}
+.navbar {
   background-color: #3fff95;
 }
