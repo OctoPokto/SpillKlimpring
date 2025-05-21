@@ -36,8 +36,20 @@ h1:hover {
   white-space: nowrap;
 }
 
-/*Index*/
-/* HTML: <div class="3d-zig-zag-edge"></div> */
+.pattern-cross-dots-md::after {
+  mask-image: radial-gradient(circle at center, transparent, black);
+}
+.pattern-checks-lg {
+  color: #fcc2f1;
+}
+.gradient-border {
+  background: linear-gradient(
+    180deg,
+    rgba(63, 255, 149, 1) 0%,
+    rgba(255, 204, 246, 1) 100%
+  );
+}
+
 .zig-zag-3d-edge {
   --s: 72px; /* control the size */
   --a: 120deg; /* control the angle  */
