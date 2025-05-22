@@ -43,6 +43,10 @@ h1:hover {
 .navbar {
   background-color: #3fff95;
 }
+.nav-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .pattern-radial-fade {
   mask-image: radial-gradient(ellipse, black, transparent 50%);
@@ -73,7 +77,25 @@ h1:hover {
   padding-left: 12px;
   padding-right: 12px;
 }
+.sk-btn {
+  background-color: white;
+  border-color: #fe01d2;
+  border-width: 5px;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: -5px 5px #fff600;
+  rotate: 5deg;
+}
+.sk-btn:hover {
+  background-color: rgb(205, 205, 205);
+  border-color: #fe01d2;
+  border-width: 5px;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: -5px 5px #fff600;
 
+  rotate: -5deg;
+}
 .sk-textbox {
   background-color: #3fff95;
   border-color: #ffccf6;
