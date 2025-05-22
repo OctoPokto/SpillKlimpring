@@ -1,6 +1,9 @@
 header {
   font-family: "Oswald", sans-serif;
+}
+.header-bg {
   background-color: #3fff95;
+  z-index: -2;
 }
 body {
   background-color: #ffccf6;
@@ -31,24 +34,40 @@ a {
 h1:hover {
   text-shadow: -3px 3px #fe01d2;
 }
-
+.header-img {
+  z-index: 2;
+}
 .navbar-brand-img {
   height: 4rem;
 }
-.pattern-cross-dots-md::after {
-  mask-image: radial-gradient(circle at center, transparent, black);
+.navbar {
+  background-color: #3fff95;
+}
+
+.pattern-radial-fade {
+  mask-image: radial-gradient(ellipse, black, transparent 50%);
+  width: 100%;
+  height: 100%;
+}
+.pattern-linear-fade {
+  mask-image: linear-gradient(transparent, #fcc2f1, transparent);
+  z-index: -1;
 }
 .pattern-checks-lg {
   color: #fcc2f1;
 }
-.gradient-border {
-  background: linear-gradient(
-    180deg,
-    rgba(63, 255, 149, 1) 0%,
-    rgba(255, 204, 246, 1) 100%
-  );
+.under {
+  z-index: -1;
 }
-
+.over {
+  z-index: 1;
+}
+.gradient-divider-top {
+  background: linear-gradient(180deg, #3fff95 0%, #ffccf6 100%);
+}
+.gradient-divider-bottom {
+  background: linear-gradient(180deg, #ffccf6 0%, #3fff95 100%);
+}
 .btn-floating {
   border-radius: 100%;
   padding-left: 12px;
@@ -71,17 +90,7 @@ h1:hover {
   overflow: hidden;
 }
 
-.info-borders {
-  border-top: solid;
-  border-left: solid;
-}
-.date {
-  text-align: end;
-  word-wrap: break-word;
-}
-.footer {
+footer {
   background-color: #3fff95;
-}
-.navbar {
-  background-color: #3fff95;
+  padding: 2rem;
 }
