@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 header {
   font-family: "Oswald", sans-serif;
 }
@@ -7,6 +10,9 @@ header {
 }
 body {
   background-color: #ffccf6;
+}
+main {
+  min-height: 80vh;
 }
 h1 {
   color: #fff600;
@@ -115,4 +121,5 @@ h1:hover {
 footer {
   background-color: #3fff95;
   padding: 2rem;
+  min-height: 50px;
 }
